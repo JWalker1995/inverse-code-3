@@ -1,0 +1,16 @@
+*.config
+*.creator
+*.creator.user
+*.files
+*.includes
+
+build/
+node_modules/
+
+html/
+latex/
+doxygen_*
+
+inverse-code-3
+test
+

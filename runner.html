@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+window.print = function(msg) {
+    console.log(msg);
+};
+</script>
+<script src="md5.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+for (let i = 0; i < 32; i++) {
+    let arr = [1,0,0,0,0,1,1,0, 0,1,0,0,0,1,1,0, 1,1,0,0,0,1,1,0, 0,0,1,0,0,1,1,0];
+    if (arr[i]) {
+        arr[i] -= 0.1;
+    } else {
+        arr[i] += 0.1;
+    }
+    let res = prob_func(arr);
+    console.log(res);
+}
+</script>
+</body>
+</html>
